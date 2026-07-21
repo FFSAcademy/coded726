@@ -1,0 +1,59 @@
+<!--THIS SOFTWARE IS PROTECTED BY COPYRIGHT. UNAUTHORIZED USE, REPRODUCTION, OR DISTRIBUTION IS STRICTLY PROHIBITED AND MAY RESULT IN LEGAL ACTION.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <script defer src="{{ url_for('static', filename='js/index.js') }}"></script>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="profile">
+            <img src="{{ url_for('static', filename='images/placeholder.png') }}" alt="Profile Image">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" class="nav-tab active" data-tab="home">Home</a></li>
+            <li><a href="#" class="nav-tab" data-tab="example">Example</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div id="home" class="tab-content active-content">
+            <h1>Welcome to the Home Page</h1>
+            <p>This is the home page content.</p>
+        </div>
+        <div id="example" class="tab-content">
+            <h1>Example</h1>
+            <p>This is an example tab.</p>
+        </div>
+    </div>
+
+
+
+
+    <div class="chatbot-container">
+        <div class="chatbot-header">
+            Chat With Knowledgeable A.I.
+            <span class="chatbot-toggle">−</span>
+        </div>
+        <div class="chatbot-messages"></div>
+        <div class="chatbot-input-container">
+            <input type="text" id="chatbot-input" placeholder="Type a message...">
+            <button id="chatbot-send">Send</button>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
+
+
+
+
